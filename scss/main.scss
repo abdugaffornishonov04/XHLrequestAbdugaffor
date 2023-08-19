@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body {
+  background-color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+////main code starts
+
+.users {
+  margin-top: 20px;
+
+  .users-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    .users-card {
+      height: 500px;
+      width: 250px;
+      padding: 5px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 5px;
+
+      img {
+        width: 100%;
+      }
+
+      .users-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .users-info-span1,
+        .users-info-span2 {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+      }
+
+      .users-social {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .users-btn-to-posts {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        background-color: #fff;
+        color: red;
+        border: 2px solid red;
+        width: 100%;
+        cursor: pointer;
+
+        &:hover {
+          color: #fff;
+          background-color: red;
+        }
+      }
+    }
+  }
+}
+
+///
+
+.posts-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  .posts-card {
+    height: 300px;
+    width: 350px;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+
+    a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      background-color: #fff;
+      color: red;
+      border: 2px solid red;
+      width: 100%;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+        background-color: red;
+      }
+    }
+  }
+}
+
+///
+
+.photos-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  .photos-card{
+    width: 250px;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    
+    img{
+      width: 100%;
+    }
+  }
+}
